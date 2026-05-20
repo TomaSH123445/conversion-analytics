@@ -310,17 +310,31 @@ The Python notebook includes visual analysis for:
 - product mix share,
 - product refund summary.
 
-Planned image exports:
 
-```text
-images/monthly_sessions_trend.png
-images/monthly_conversion_rate_trend.png
-images/monthly_revenue_per_session_trend.png
-images/monthly_average_order_value.png
-images/monthly_product_mix_share.png
-```
+### Key trends
 
-These images will be added to the README after final export.
+Charts exported from `python/notebooks/Eda_validation.ipynb`.
+
+#### Monthly website sessions
+
+![Monthly website sessions](images/monthly_sessions_trend.png) 
+
+#### Monthly conversion rate
+
+![Monthly conversion rate](images/monthly_conversion_rate_trend.png)
+
+#### Monthly revenue per session
+
+![Monthly revenue per session](images/monthly_revenue_per_session_trend.png)
+
+#### Monthly average order value
+
+![Monthly average order value](images/monthly_average_order_value.png)
+
+#### Monthly product mix share
+
+![Monthly product mix share](images/monthly_product_mix_share.png)
+
 
 ---
 
