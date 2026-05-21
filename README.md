@@ -331,6 +331,10 @@ Charts exported from `python/notebooks/Eda_validation.ipynb`.
 
 ![Monthly average order value](images/monthly_average_order_value.png)
 
+#### Monthly item sold by product
+
+![Monthly item sold by product](images/monthly_items_sold_by_product.png)
+
 #### Monthly product mix share
 
 ![Monthly product mix share](images/monthly_product_mix_share.png)
@@ -479,12 +483,3 @@ The increase in average order value is strongly connected to larger baskets and 
 The Original Mr. Fuzzy remains the main revenue driver, while The Birthday Sugar Panda should be investigated as the main refund-risk product.
 
 ---
-
-## Next Steps
-
-1. Finalize Python visual exports.
-2. Add chart images to the README.
-3. Build the Power BI dashboard.
-4. Add Power BI screenshots to the `images/` folder.
-5. Update the README with dashboard preview.
-6. Prepare a short LinkedIn case study post.
