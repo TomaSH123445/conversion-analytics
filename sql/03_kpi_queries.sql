@@ -2,7 +2,8 @@
 -- Purpose:
 -- Calculate core e-commerce KPIs for traffic, conversion,
 -- revenue, margin, refunds, channel performance, device performance,
--- product performance and landing page performance.
+-- and product performance.
+-- Landing page and funnel metrics: see sql/04_business_analysis.sql.
 --
 
 -- ============================================================

@@ -419,6 +419,7 @@ WITH session_flags AS (
     SELECT
         website_session_id,
 
+        -- reached_landing: optional flag for lander URLs (not used in funnel_counts below).
         MAX(CASE
             WHEN pageview_url IN ('/home', '/lander-1', '/lander-2', '/lander-3', '/lander-4')
                 THEN 1 ELSE 0

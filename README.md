@@ -65,9 +65,9 @@ ecommerce-marketing-conversion-analytics/
 │   └── processed/
 ├── docs/
 │   ├── business_questions.md
+│   ├── business_insights.md
 │   ├── data_dictionary.md
-│   ├── metric_definitions.md
-│   └── business_insights.md
+│   └── metric_definitions.md
 ├── sql/
 │   ├── 00_create_tables.sql
 │   ├── 01_data_exploration.sql
@@ -76,7 +76,7 @@ ecommerce-marketing-conversion-analytics/
 │   └── 04_business_analysis.sql
 ├── python/
 │   └── notebooks/
-│       └── 01_eda_validation.ipynb
+│       └── Eda_validation.ipynb
 ├── powerbi/
 │   └── README.md
 └── images/
@@ -220,6 +220,8 @@ The notebook:
 ```text
 python/notebooks/Eda_validation.ipynb
 ```
+
+See also `docs/business_insights.md` and `powerbi/README.md` for dashboard planning.
 
 validates SQL findings using Python and pandas.
 
