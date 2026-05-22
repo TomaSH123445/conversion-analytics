@@ -85,7 +85,7 @@ FROM website_pageviews;
 -- What this query checks:
 -- Checks whether primary keys contain NULL values.
 --
--- Why matters:
+-- Why it matters:
 -- Primary keys must be unique and non-null.
 --
 -- Expected result:

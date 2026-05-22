@@ -218,7 +218,7 @@ GROUP BY COALESCE(ws.utm_source, 'direct_or_none')
 ORDER BY gross_revenue DESC;
 
 -- ============================================================
--- 5. Campaign performance
+-- 4. Campaign performance
 -- ============================================================
 -- What this query calculates:
 -- Sessions, orders, conversion rate, revenue and revenue per session
@@ -242,7 +242,7 @@ GROUP BY COALESCE(ws.utm_campaign, 'no_campaign')
 ORDER BY gross_revenue DESC;
 
 -- ============================================================
--- 6. Device performance
+-- 5. Device performance
 -- ============================================================
 -- What this query calculates:
 -- Sessions, orders, conversion rate, revenue and revenue per session
@@ -266,7 +266,7 @@ GROUP BY ws.device_type
 ORDER BY gross_revenue DESC;
 
 -- ============================================================
--- 7. Product performance
+-- 6. Product performance
 -- ============================================================
 -- What this query calculates:
 -- Product-level revenue, margin, sold items, refund amount and refund rate.

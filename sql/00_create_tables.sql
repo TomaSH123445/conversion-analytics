@@ -1,5 +1,10 @@
 -- 00_create_tables.sql
 -- Purpose: Create PostgreSQL tables for the Maven Fuzzy Factory e-commerce dataset.
+--
+-- Notes:
+--   is_repeat_session and is_primary_item are INT flags (0/1) matching the CSV extracts.
+--   In Power BI, treat them as Boolean. Import timestamps as TIMESTAMP (not VARCHAR).
+
 CREATE TABLE products (
     product_id INT PRIMARY KEY,
     created_at TIMESTAMP,
@@ -10,7 +15,7 @@ CREATE TABLE website_sessions (
     website_session_id INT PRIMARY KEY,
     created_at TIMESTAMP,
     user_id INT,
-    is_repeat_session INT,
+    is_repeat_session INT,  -- 0 = first session in dataset context, 1 = repeat
     utm_source VARCHAR(100),
     utm_campaign VARCHAR(100),
     utm_content VARCHAR(100),
@@ -66,12 +71,11 @@ CREATE TABLE order_item_refunds (
     created_at TIMESTAMP,
     order_item_id INT,
     order_id INT,
-    refund_amount_usd NUMERIC(10,2),
+    refund_amount_usd NUMERIC(10, 2),
     CONSTRAINT fk_refunds_order_items
         FOREIGN KEY (order_item_id)
         REFERENCES order_items(order_item_id),
     CONSTRAINT fk_refunds_orders
         FOREIGN KEY (order_id)
         REFERENCES orders(order_id)
-    );
-
+);

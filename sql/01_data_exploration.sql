@@ -3,6 +3,8 @@
 -- Purpose:
 -- Understand the dataset structure, row counts, date ranges,
 -- main dimensions, products, traffic sources and basic website behavior.
+--
+-- Run order: 00_create_tables.sql -> import CSVs -> this file -> 02 -> 03 -> 04
 -- ============================================================
 
 

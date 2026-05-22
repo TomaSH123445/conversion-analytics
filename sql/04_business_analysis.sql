@@ -414,16 +414,12 @@ ORDER BY lp.sessions DESC;
 -- Important:
 -- Check available pageview_url values in 01_data_exploration.sql.
 -- If page URLs differ, adjust the IN lists below.
+-- Lander URLs (/home, /lander-*) are not a separate funnel step in this query;
+-- add a session flag and UNION row in funnel_counts if you need that step.
 
 WITH session_flags AS (
     SELECT
         website_session_id,
-
-        -- reached_landing: optional flag for lander URLs (not used in funnel_counts below).
-        MAX(CASE
-            WHEN pageview_url IN ('/home', '/lander-1', '/lander-2', '/lander-3', '/lander-4')
-                THEN 1 ELSE 0
-        END) AS reached_landing,
 
         MAX(CASE
             WHEN pageview_url = '/products'

@@ -56,7 +56,7 @@ Main tables:
 ## Repository Structure
 
 ```text
-ecommerce-marketing-conversion-analytics/
+conversion-analytics/
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
@@ -69,6 +69,7 @@ ecommerce-marketing-conversion-analytics/
 │   ├── data_dictionary.md
 │   └── metric_definitions.md
 ├── sql/
+│   ├── README.md
 │   ├── 00_create_tables.sql
 │   ├── 01_data_exploration.sql
 │   ├── 02_data_quality_checks.sql

@@ -47,7 +47,7 @@ Source: CSV extracts in `data/raw/` (Maven Analytics *Fuzzy Factory* style ecomm
 | `created_at` | Often mirrors order time; confirm if used as event time. |
 | `order_id` | Parent order. |
 | `product_id` | Product dimension. |
-| `is_primary_item` | Flags primary line in bundle-oriented logic. |
+| `is_primary_item` | Flags primary line in bundle-oriented logic (`0` or `1`). |
 | `price_usd`, `cogs_usd` | Line revenue and COGS. |
 
 ---
@@ -102,7 +102,7 @@ Source: CSV extracts in `data/raw/` (Maven Analytics *Fuzzy Factory* style ecomm
 | **Primary key** | `website_session_id` |
 | **Foreign keys** | `user_id` → logical user (same as orders; no `users` entity file). |
 | **Business use** | Traffic and marketing attribution (`utm_*`, `http_referer`), device split (`device_type`), new vs returning (`is_repeat_session`), session-to-order conversion when joined to `orders`. |
-| **Risk / caveats** | UTM and referer are client-supplied and can be stripped, wrong, or inconsistent; last-click bias if used as sole attribution. `is_repeat_session` depends on prior history in the dataset window. Typo in source material: “ression” should read “session”. |
+| **Risk / caveats** | UTM and referer are client-supplied and can be stripped, wrong, or inconsistent; last-click bias if used as sole attribution. `is_repeat_session` depends on prior history in the dataset window. Stored as `0`/`1` in CSV—use Boolean in Power BI. |
 
 **Important columns**
 
@@ -111,7 +111,7 @@ Source: CSV extracts in `data/raw/` (Maven Analytics *Fuzzy Factory* style ecomm
 | `website_session_id` | PK; join to pageviews and orders. |
 | `created_at` | Session start. |
 | `user_id` | Visitor key. |
-| `is_repeat_session` | Repeat vs first session flag. |
+| `is_repeat_session` | Repeat vs first session flag (`0` or `1`). |
 | `utm_source`, `utm_campaign`, `utm_content` | Campaign hierarchy. |
 | `device_type` | Mobile vs desktop (coarse). |
 | `http_referer` | Referring URL string. |

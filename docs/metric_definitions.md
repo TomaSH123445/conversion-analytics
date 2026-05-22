@@ -26,3 +26,5 @@ Canonical KPI definitions aligned with `sql/03_kpi_queries.sql` and `python/note
 **Attribution:** Marketing metrics (`utm_source`, `utm_campaign`, `utm_content`, `device_type`) live on `website_sessions`. Join `orders` on `website_session_id` with a left join from sessions when conversion or revenue per session is required.
 
 **Product vs order revenue:** Header `orders.price_usd` equals the sum of child `order_items` in this dataset. Use `order_items` for mix, units, and item refunds; use `orders` for session conversion and AOV.
+
+**Binary flags:** `is_repeat_session` and `is_primary_item` are `0`/`1` in source files; cast to Boolean in Power Query where helpful.
