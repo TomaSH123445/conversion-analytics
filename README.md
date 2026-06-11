@@ -431,51 +431,7 @@ Purpose:
 
 Identify where users drop off before purchase.
 
----
 
-## Skills Demonstrated
-
-### SQL
-
-- Joins
-- LEFT JOIN logic
-- CTEs
-- Aggregations
-- Date truncation
-- KPI calculation
-- Data quality checks
-- Funnel analysis
-- Business analysis queries
-
-### PostgreSQL
-
-- Table creation
-- Data import
-- Relational data modeling
-- Query validation
-
-### Python
-
-- pandas data loading
-- DataFrame validation
-- groupby operations
-- merge operations
-- pivot tables
-- KPI validation
-- matplotlib visualizations
-- trend analysis
-
-### Business Analytics
-
-- Conversion analysis
-- Revenue analysis
-- Product performance analysis
-- Refund risk analysis
-- Product mix analysis
-- Basket size analysis
-- Business insight generation
-
----
 
 ## Main Analytical Takeaway
 
